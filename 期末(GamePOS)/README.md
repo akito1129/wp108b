@@ -5,6 +5,6 @@
 圖源:露天拍賣網站內取得
 作品參考來源:老師的pos系統
 參考的資料及我對其理解、改篇的程度:
- 1.版面是閱讀過陳忠誠老師的pos系統後進行改寫(老師的POS系統網址https://github.com/ccccourse/wp/tree/master/code/08-app2/pos/06-report) 
+ 1.版面是閱讀過陳忠誠老師跟柯泓吉同學的pos系統後進行改寫(老師的POS系統網址https://github.com/ccccourse/wp/tree/master/code/08-app2/pos/06-report) 
  2.註冊、登入跟修改密碼忘記密碼等功能是參考w3school的html去做修改的(參考網址:https://www.w3schools.com/html/html_forms.asp)
  3.對此邏輯部分玩全理解，但Code只有部分理解...
