@@ -1,0 +1,123 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="main.css"/>
+    </head>
+    <body onload="Shop.start()">
+    <header>
+      <div class="navbar" style="float:left">
+        <a onclick="Ui.openNav()" style="cursor:pointer">&#9776;</a>
+      </div>
+      <div class="navbar" style="float:right">
+        <div class="dropdown">
+        <button class="dropbtn">
+                <i class="fa fa-user"></i>
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="navbar">
+                <a href="index.html">首頁</a>
+              </div>
+          <div class="dropdown-content">
+            <a href="登入.html">登入</a>
+            <a href="index.html">登出</a>
+            <a href="註冊.html">註冊</a>
+          </div>
+        </div>
+        <a href="https://www.dlsite.com/pro/" id="menuShopName">DLsite遊戲販售網</a>
+      </div>
+    </header>
+    <aside>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="Ui.closeNav()">&times;</a>
+        <a href="https://www.dlsite.com/pro/ranking">商品排行</a>
+        <a href="https://www.eisys.co.jp/company/information">公司簡介</a>
+        <a href="https://www.dlsite.com/pro/welcome">訪客須知</a>
+        <a href="https://www.dlsite.com/pro/sitemap">地圖</a>
+        <a href="https://www.dlsite.com/pro/guide/copy">商品授權</a>
+      </div>
+    </aside>
+    <main>
+      <div id="main" class="table" style="text-align:center">
+      </div>
+    </main>
+    
+    <footer>
+    </footer>
+
+    </body>
+    </html>
+  <script>
+        function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+  }
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
+  </script>
+<div class="main">
+    <form>
+        <fieldset>
+          <legend>個人資料</legend>
+        <label for="username">帳號:</label><br>
+        <input type="text" id="username" name="username"><br><!--文字輸入欄-->
+        <label for="pwd">密碼:</label><br>
+        <input type='password' name='password' id='password' placeholder='請輸入密碼' required='required'>
+        <h3>確認密碼</h3>
+        <input type='password' id='password2' placeholder='請再次確認您的密碼' required='required'>
+        <div class='checkpass'>如密碼不相符請重新輸入</div>
+        <label for="e-mail">e-mail:</label><br>
+        <input type="e-mail" id="e-mail" name="e-mail"><br>
+        <label for="身分證">身分證:</label><br>
+        <input type="身分證" id="身分證" name="身分證"><br>
+        <label>血型</label><br>
+      <select id="cars" name="cars">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="AB">AB</option>
+        <option value="O">O</option>
+      </select><br/>
+      <form action="/action_page.php">
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname" value=""><br>
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname" value=""><br><br>
+        <label for="Chinese name">Chinese name:</label><br>
+        <input type="text" id="Chinese name" name="Chinese name" value=""><br><br>
+        <label for="cellphone">cellphone:</label><br>
+        <input type="text" id="cellphonee" name="cellphone" value=""><br>
+        <label for="address">address:</label><br>
+        <input type="text" id="address" name="address" value=""><br>
+      </form> 
+      <input type="radio" id="男" name="gender" value="男">
+      <label for="男">男</label><br>
+      <input type="radio" id="女" name="gender" value="女">
+      <label for="女">女</label><br>
+      <input type="radio" id="其他" name="gender" value="其他"">
+      <label for="其他">其他</label><br><br>
+        <label for="birthday">生日:</label><br/>
+        <input type="date" id="birthday" name="birthday">
+        <br/>
+        <label>喜好:</label><br/>
+        <input type="radio" id="劇情向" name="gender" value="劇情向">
+        <label for="劇情向">劇情向</label><br>
+        <input type="radio" id="后宮" name="gender" value="后宮">
+        <label for="后宮">后宮</label><br>
+        <input type="radio" id="純愛" name="gender" value="純愛">
+        <label for="純愛">純愛</label><br>
+        <input type="radio" id="冒險" name="gender" value="冒險">
+        <label for="冒險">冒險</label><br>
+        <input type="radio" id="其他" name="gender" value="其他"">
+        <label for="其他">其他</label><br><br>
+        <label>留言:</label><br/>
+      <textarea name="message">
+      
+      </textarea>
+      <br/><br/>
+          <button><a href="index.html" style="float: right;">提交</a></button><br/><br/>
+        </fieldset>
+      </form>      
+</div>
+<script src="Ui.js"></script>
+</body>
+</html>

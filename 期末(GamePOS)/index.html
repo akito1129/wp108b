@@ -1,0 +1,54 @@
+<html>
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="main.css"/>
+    </head>
+    <body onload="Shop.start()">
+    <header>
+      <div class="navbar" style="float:left">
+        <a onclick="Ui.openNav()" style="cursor:pointer">&#9776;</a><!--openNav 打開關掉-->
+      </div>
+      <div class="navbar" style="float:right">
+        <div class="dropdown">
+          <button class="dropbtn">
+            <i class="fa fa-user"></i>
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="navbar">
+            <a href="index.html">首頁</a>
+          </div>
+          <div class="dropdown-content">
+            <a href="登入.html">登入</a>
+            <a href="index.html">登出</a>
+            <a href="註冊.html">註冊</a>
+          </div>
+        </div>
+        <a href="https://www.dlsite.com/pro/" id="menuShopName">DLsite遊戲販售網</a>
+      </div>
+    </header>
+    <aside>
+      <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="Ui.closeNav()">&times;</a>
+        <a href="https://www.dlsite.com/pro/ranking">商品排行</a>
+        <a href="https://www.eisys.co.jp/company/information">公司簡介</a>
+        <a href="https://www.dlsite.com/pro/welcome">訪客須知</a>
+        <a href="https://www.dlsite.com/pro/sitemap">地圖</a>
+        <a href="https://www.dlsite.com/pro/guide/copy">商品授權</a>
+      </div>
+    </aside>
+    <main>
+      <div id="main" class="table" style="text-align:center">
+      </div>
+    </main>
+    
+    <footer>
+    </footer>
+    <script src="Shop.js"></script>
+    <script src="Pos.js"></script>
+    <script src="Report.js"></script>
+    <script src="Setting.js"></script>
+    <script src="Lib.js"></script>
+    <script src="Ui.js"></script>
+    </body>
+    </html>
