@@ -1,12 +1,11 @@
-* Not
-
+* Not {
     // and the book "The Elements of Computing Systems"
     // by Nisan and Schocken, MIT Press.
     // File name: projects/01/Not.hdl
 
     /**
-    *Not gate:
-    *out = not in
+    * Not gate:
+    * out = not in
     */
 
     CHIP Not {
@@ -17,6 +16,7 @@
         // Put your code here:
         Nand(a=in, b=in, out=out);
     }
+}    
 
 * And
     // This file is part of www.nand2tetris.org
