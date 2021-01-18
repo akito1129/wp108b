@@ -1,11 +1,12 @@
 * Not
+
     // and the book "The Elements of Computing Systems"
     // by Nisan and Schocken, MIT Press.
     // File name: projects/01/Not.hdl
 
     /**
-    * Not gate:
-    * out = not in
+    *Not gate:
+    *out = not in
     */
 
     CHIP Not {
@@ -30,7 +31,7 @@
     */
 
     CHIP And {
-        IN a, b;
+        IN a, b;git
         OUT out;
 
         PARTS:
