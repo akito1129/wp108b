@@ -274,4 +274,5 @@
     DMux(in=Dd,sel=sel[0],a=c,b=d);
     DMux(in=De,sel=sel[0],a=e,b=f);
     DMux(in=Df,sel=sel[0],a=g,b=h);
-    }                        
+    }
+![co109a](./123201.jpg)                        
