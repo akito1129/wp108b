@@ -1,23 +1,22 @@
 # WEEK1
 ## Not 
-
-// and the book "The Elements of Computing Systems"   
-// by Nisan and Schocken, MIT Press.   
-// File name: projects/01/Not.hdl   
+    // and the book "The Elements of Computing Systems"   
+    // by Nisan and Schocken, MIT Press.   
+    // File name: projects/01/Not.hdl   
    
-/**   
-* Not gate:   
-* out = not in   
-*/   
+    /**   
+    * Not gate:   
+    * out = not in   
+    */   
     
-CHIP Not {   
-    IN in;   
-    OUT out;   
+    CHIP Not {   
+        IN in;   
+        OUT out;   
    
-    PARTS:   
-    // Put your code here:   
-    Nand(a=in, b=in, out=out);   
-}   
+        PARTS:   
+        // Put your code here:   
+        Nand(a=in, b=in, out=out);   
+    }   
        
    
 ## And
@@ -43,27 +42,28 @@ CHIP Not {
 
     }
 
-* Or
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
-// File name: projects/01/Or.hdl
+## Or
+    // and the book "The Elements of Computing Systems"
+    // by Nisan and Schocken, MIT Press.
+    // File name: projects/01/Or.hdl
 
- /**
- * Or gate:
- * out = 1 if (a == 1 or b == 1)
- *       0 otherwise
- */
+    /**
+    * Or gate:
+    * out = 1 if (a == 1 or b == 1)
+    *       0 otherwise
+    */
 
-CHIP Or {
-    IN a, b;
-    OUT out;
+    CHIP Or {
+        IN a, b;
+        OUT out;
 
-    PARTS:
-    // Put your code here:
-    Not(in=a,out=na);
-    Not(in=b,out=nb);
-    Nand(a=na,b=nb,out=out);
-}
+        PARTS:
+        // Put your code here:
+        Not(in=a,out=na);
+        Not(in=b,out=nb);
+        Nand(a=na,b=nb,out=out);
+    }
+
 
 * Xor
 // and the book "The Elements of Computing Systems"
