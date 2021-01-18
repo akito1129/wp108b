@@ -1,24 +1,26 @@
-* Not {
-    // and the book "The Elements of Computing Systems"
-    // by Nisan and Schocken, MIT Press.
-    // File name: projects/01/Not.hdl
+# WEEK1
+## Not 
 
-    /**
-    * Not gate:
-    * out = not in
-    */
+// and the book "The Elements of Computing Systems"
+// by Nisan and Schocken, MIT Press.
+// File name: projects/01/Not.hdl
 
-    CHIP Not {
-        IN in;
-        OUT out;
+/**
+* Not gate:
+* out = not in
+*/
 
-        PARTS:
-        // Put your code here:
-        Nand(a=in, b=in, out=out);
-    }
-}    
+CHIP Not {
+    IN in;
+    OUT out;
 
-* And
+    PARTS:
+    // Put your code here:
+    Nand(a=in, b=in, out=out);
+}
+    
+
+## And
     // This file is part of www.nand2tetris.org
     // and the book "The Elements of Computing Systems"
     // by Nisan and Schocken, MIT Press.
@@ -130,4 +132,4 @@ CHIP DMux {
     And(a=in,b=sel,out=b);
 }
 
-![1610984238903.jpg]
+![](1610984238903.jpg)
