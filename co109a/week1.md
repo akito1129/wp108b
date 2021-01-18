@@ -1,4 +1,4 @@
-*Not
+* Not
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
 // File name: projects/01/Not.hdl
@@ -17,7 +17,7 @@ CHIP Not {
     Nand(a=in, b=in, out=out);
 }
 
-*And
+* And
 // This file is part of www.nand2tetris.org
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
@@ -40,7 +40,7 @@ CHIP And {
 
 }
 
-*Or
+* Or
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
 // File name: projects/01/Or.hdl
@@ -62,7 +62,7 @@ CHIP Or {
     Nand(a=na,b=nb,out=out);
 }
 
-*Xor
+* Xor
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
 // File name: projects/01/Xor.hdl
@@ -84,7 +84,7 @@ CHIP Xor {
   Or(a=o1,b=o2,out=out);
 }
 
-*Mux
+* Mux
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
 // File name: projects/01/Mux.hdl
@@ -107,7 +107,7 @@ CHIP Mux {
     Or(a=o1,b=o2,out=out);
 }
 
-*DMux
+* DMux
 // and the book "The Elements of Computing Systems"
 // by Nisan and Schocken, MIT Press.
 // File name: projects/01/DMux.hdl
@@ -128,4 +128,5 @@ CHIP DMux {
     And(a=in,b=nsel,out=a);
     And(a=in,b=sel,out=b);
 }
+
 ![1610984238903.jpg]
