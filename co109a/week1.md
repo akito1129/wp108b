@@ -65,71 +65,71 @@
     }
 
 
-* Xor
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
-// File name: projects/01/Xor.hdl
+## Xor
+    // and the book "The Elements of Computing Systems"
+    // by Nisan and Schocken, MIT Press.
+    // File name: projects/01/Xor.hdl
 
-/**
- * Exclusive-or gate:
- * out = not (a == b)
- */
+    /**
+     * Exclusive-or gate:
+     * out = not (a == b)
+    */
 
-CHIP Xor {
-    IN a, b;
-    OUT out;
+    CHIP Xor {
+       IN a, b;
+        OUT out;
 
-    PARTS:
-    // Put your code here:
-    Not(in=b,out=nb);
-  And(a=na,b=b,out=o1);
-  And(a=a,b=nb,out=o2);
-  Or(a=o1,b=o2,out=out);
-}
+        PARTS:
+        // Put your code here:
+        Not(in=b,out=nb);
+        And(a=na,b=b,out=o1);
+        And(a=a,b=nb,out=o2);
+        Or(a=o1,b=o2,out=out);
+    }
 
-* Mux
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
-// File name: projects/01/Mux.hdl
+## Mux
+    // and the book "The Elements of Computing Systems"
+    // by Nisan and Schocken, MIT Press.
+    // File name: projects/01/Mux.hdl
 
-/** 
- * Multiplexor:
- * out = a if sel == 0
- *       b otherwise
- */
+    /** 
+    * Multiplexor:
+    * out = a if sel == 0
+    *       b otherwise
+    */
 
-CHIP Mux {
-    IN a, b, sel;
-    OUT out;
+    CHIP Mux {
+        IN a, b, sel;
+        OUT out;
 
-    PARTS:
-    // Put your code here:
-    Not(in=sel,out=ns);
-    And(a=a,b=ns,out=o1);
-    And(a=b,b=sel,out=o2);
-    Or(a=o1,b=o2,out=out);
-}
+        PARTS:
+        // Put your code here:
+        Not(in=sel,out=ns);
+        And(a=a,b=ns,out=o1);
+        And(a=b,b=sel,out=o2);
+        Or(a=o1,b=o2,out=out);
+    }
 
-* DMux
-// and the book "The Elements of Computing Systems"
-// by Nisan and Schocken, MIT Press.
-// File name: projects/01/DMux.hdl
+## DMux
+    // and the book "The Elements of Computing Systems"
+    // by Nisan and Schocken, MIT Press.
+    // File name: projects/01/DMux.hdl
 
-/**
- * Demultiplexor:
- * {a, b} = {in, 0} if sel == 0
- *          {0, in} if sel == 1
- */
+    /**
+    * Demultiplexor:
+    * {a, b} = {in, 0} if sel == 0
+    *          {0, in} if sel == 1
+    */
 
-CHIP DMux {
-    IN in, sel;
-    OUT a, b;
+    CHIP DMux {
+        IN in, sel;
+        OUT a, b;
 
-    PARTS:
-    // Put your code here:
-    Not(in=sel,out=nsel);
-    And(a=in,b=nsel,out=a);
-    And(a=in,b=sel,out=b);
-}
+        PARTS:
+        // Put your code here:
+        Not(in=sel,out=nsel);
+        And(a=in,b=nsel,out=a);
+        And(a=in,b=sel,out=b);
+    }
 
 ![](1610984238903.jpg)
